@@ -1,0 +1,178 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+section {
+  padding: 70px 40px;
+  scroll-margin-top: 100px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+/* HEADER */
+header {
+  background: #0b5ed7;
+  color: #fff;
+}
+
+/* Reduce header height */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px; /* reduced from 20px 40px */
+}
+
+.offcanvas__logo img {
+  max-height: 120px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .offcanvas__logo img {
+    width: 120px;
+  }
+}
+
+.logo {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  font-size: 15px;
+}
+
+/* HERO */
+.hero {
+  padding: 90px 40px;
+  background: linear-gradient(120deg, #0b5ed7, #0dcaf0);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 46px);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: clamp(16px, 2.5vw, 18px);
+  max-width: min(98%, 1600px);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  background: #ffc107;
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+/* about */
+.about {
+  background: #f8f9fa;
+  text-align: left;
+}
+
+/* GRID & CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ALT BACKGROUND */
+.alt-bg {
+  background: #f8f9fa;
+}
+
+/* CONTACT */
+.contact {
+  background: #0b5ed7;
+  color: #fff;
+}
+
+.contact-points {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.contact-points li {
+  margin-bottom: 8px;
+}
+
+/* FORM */
+.form-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  max-width: 500px;
+  color: #000;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 50px 40px;
+}
+
+footer a {
+  color: #0dcaf0;
+  text-decoration: none;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+
