@@ -109,6 +109,50 @@ nav a {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
+.card-media {
+  width: 100%;
+  background: #f8f9fa; /* neutral background for empty space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.card-media img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain; /* show full image */
+  display: block;
+}
+
+.card-media video {
+  /*width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills card like image 
+  display: block; */ 
+  
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain; /* show full image */
+  display: block;
+}
+
+.card:hover video {
+  filter: brightness(1.05);
+}
+
+@media (max-width: 768px) {
+  .card-media {
+    height: 150px;
+  }
+}
+
 /* ALT BACKGROUND */
 .alt-bg {
   background: #f8f9fa;
@@ -172,7 +216,33 @@ footer a {
   border-radius: 50px;
   font-weight: 700;
   text-decoration: none;
+  z-index: 998;
 }
 
+#scrollTopBtn {
+  position: fixed;
+  bottom: 90px; /* Push it above WhatsApp */
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #0b5ed7;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+
+#scrollTopBtn.show {
+  display: block;
+}
+
+
+#scrollTopBtn:hover {
+  background: #084298;
+}
 
 
